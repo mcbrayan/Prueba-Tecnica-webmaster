@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba Tecnica Nexura</title>
+    <style>
+        h1 {
+            text-align: center;
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Nexura</h1>
+    </header>
+    <ul>
+        <li>hola</li>
+        <li>soy</li>
+        <li>una prueba</li>
+    </ul>
+    <table>
+        <thead>
+            <tr>
+                <th>Columna 1</th>
+                <th>Columna 2</th>
+                <th>Columna 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Dato 1A</td>
+                <td>Dato 1B</td>
+                <td>Dato 1C</td>
+            </tr>
+            <tr>
+                <td>Dato 2A</td>
+                <td>Dato 2B</td>
+                <td>Dato 2C</td>
+            </tr>
+            <tr>
+                <td>Dato 3A</td>
+                <td>Dato 3B</td>
+                <td>Dato 3C</td>
+            </tr>
+        </tbody>
+    </table>
+    <div id="idColor">
+        soy white
+    </div>
+    <button onclick="CambiarColor()">Cambiar de color</button>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js"
+    integrity="sha512-WW8/jxkELe2CAiE4LvQfwm1rajOS8PHasCCx+knHG0gBHt8EXxS6T6tJRTGuDQVnluuAvMxWF4j8SNFDKceLFg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+    let isColorRed = false
+    $(document).ready(function () {
+        alert("¡Bienvenido a nuestra página web!")
+    });
+    function CambiarColor() {
+        if (!isColorRed) {
+            $("#idColor").css("background-color", "red");
+            $("#idColor").html("soy red");
+            isColorRed = true
+        } else {
+            $("#idColor").html("soy white");
+            $("#idColor").css("background-color", "white");
+            isColorRed = false
+        }
+    }
+</script>
+
+</html>
